@@ -17,16 +17,34 @@
       </ion-header>
 
       <div id="container">
-        <strong class="capitalize"> Video {{ $route.params.id }}</strong>
+        <iframe id="video" src="https://www.youtube.com/embed/jKMTRtkXAF0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <ion-card>
+          <ion-card-header>
+            <ion-card-title>Video Title</ion-card-title>
+            <ion-card-subtitle>Published date</ion-card-subtitle>
+          </ion-card-header>
 
-        <p> TODO VIDEO</p>
+          <ion-card-content>
+            TODO DESCRIPTION HERE
+          </ion-card-content>
+        </ion-card>
       </div>
     </ion-content>
   </ion-page>
 </template>
 
 <script>
-import { IonButtons, IonContent, IonHeader, IonMenuButton, IonPage, IonTitle, IonToolbar } from '@ionic/vue';
+import {
+  IonButtons,
+  IonCardHeader, IonCardSubtitle, IonCardTitle,
+  IonContent,
+  IonHeader,
+  IonMenuButton,
+  IonPage,
+  IonTitle,
+  IonToolbar
+} from '@ionic/vue';
+
 export default {
   name: 'Folder',
   components: {
@@ -36,31 +54,19 @@ export default {
     IonMenuButton,
     IonPage,
     IonTitle,
-    IonToolbar
+    IonToolbar,
+    IonCardHeader,
+    IonCardTitle,
+    IonCardSubtitle
   }
 }
 </script>
 
 <style scoped>
-#container {
-  text-align: center;
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
+
+#video {
+  width:100%;
+  height:70vh;
 }
-#container strong {
-  font-size: 20px;
-  line-height: 26px;
-}
-#container p {
-  font-size: 16px;
-  line-height: 22px;
-  color: #8c8c8c;
-  margin: 0;
-}
-#container a {
-  text-decoration: none;
-}
+
 </style>
