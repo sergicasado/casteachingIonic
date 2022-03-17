@@ -69,8 +69,8 @@ export default defineComponent({
       },
 
       {
-        title: 'Outbox',
-        url: '/folder/Outbox',
+        title: 'Videos',
+        url: '/videos',
         iosIcon: paperPlaneOutline,
         mdIcon: paperPlaneSharp
       },
