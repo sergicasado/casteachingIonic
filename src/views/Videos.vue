@@ -15,7 +15,7 @@
     </ion-item>
 
   </ion-list>
-</template>
+</template> 
 
 <script>
 import {IonAvatar, IonItem, IonLabel, IonList, IonListHeader} from "@ionic/vue";
